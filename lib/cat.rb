@@ -1,6 +1,3 @@
-class Cat
-  
-  def initialize(name) 
-    @name = name 
-  end
-end
+  def self.count
+    @@all.length
+  end 
