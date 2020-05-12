@@ -41,9 +41,9 @@ describe "Associations" do
         expect(@owner.cats.count).to eq(0)
 
 
-        cat_1 = Cat.new("Garfield", nil)
-        cat_2 = Cat.new("Fido", nil)
-        cat_3 = Cat.new("Whiskers", nil)
+        cat_1 = Cat.new("Crookshanks", nil)
+        cat_2 = Cat.new("Whiskers", nil)
+        cat_3 = Cat.new("Garfield", nil)
         
         @owner.buy_cat("Crookshanks")
         @owner.buy_cat("Whiskers")
