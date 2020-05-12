@@ -31,4 +31,8 @@ class Owner
     @@all = []
   end 
   
+  def cats 
+    Cat.all 
+  end
+  
 end
