@@ -17,6 +17,10 @@ class Cat
     @owner 
   end
   
+  def owner=(new_owner) 
+    @owner = new_owner
+  end
+  
   def mood 
     @mood 
   end 
