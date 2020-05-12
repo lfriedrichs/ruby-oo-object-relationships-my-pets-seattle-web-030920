@@ -32,7 +32,7 @@ class Owner
   end 
   
   def cats 
-    Cat.all 
+    Cat.all.
   end
   
   def dogs 
