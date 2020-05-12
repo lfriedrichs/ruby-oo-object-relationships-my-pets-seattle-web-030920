@@ -61,6 +61,7 @@ class Owner
     self.cats.each {|cat| cat.mood = "nervous", cat.owner=('')}
     self.dogs.each {|dog| dog.mood = "nervous", dog.owner=('')}
   end 
+  
   def list_pets 
     "I ahve #{self.dogs.length} dog(s) and #{self.cats.length} cat(s)."
   end 
