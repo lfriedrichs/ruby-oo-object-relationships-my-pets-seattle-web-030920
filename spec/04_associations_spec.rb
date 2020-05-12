@@ -96,9 +96,9 @@ describe "Associations" do
         @owner.buy_dog("Fido")
         @owner.buy_dog("Rover")
 
-        expect(@owner.dogs[0].name).to eq("Snuffles")
-        expect(@owner.dogs[1].name).to eq("Fido")
-        expect(@owner.dogs[2].name).to eq("Rover")
+        expect(@owner.dogs[2].name).to eq("Snuffles")
+        expect(@owner.dogs[0].name).to eq("Fido")
+        expect(@owner.dogs[1].name).to eq("Rover")
       end
     end
 
