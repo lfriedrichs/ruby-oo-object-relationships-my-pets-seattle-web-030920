@@ -76,9 +76,9 @@ describe "Associations" do
       it 'can buy a dog that is an instance of the Dog class' do
         expect(@owner.dogs.count).to eq(0)
         
-        dog_1 = Dog.new("Fido", @owner)
-        dog_2 = Dog.new("Snuffles", @owner)
-        dog_3 = Dog.new("Rover", @owner)
+        dog_1 = Dog.new("Fido", nil)
+        dog_2 = Dog.new("Snuffles", nil)
+        dog_3 = Dog.new("Rover", nil)
 
         @owner.buy_dog("Snuffles")
         @owner.buy_dog("Fido")
