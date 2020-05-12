@@ -45,7 +45,6 @@ class Owner
   
   def buy_dog(name)
     new_dog = Dog.all.find {|dog| dog.name == name}
-    new_dog.owner=(self)
   end
   
   def walk_dogs
