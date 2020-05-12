@@ -92,9 +92,9 @@ describe "Associations" do
       end
 
       it 'knows about its dogs' do
-        @owner.buy_dog("Snuffles")
         @owner.buy_dog("Fido")
         @owner.buy_dog("Rover")
+        @owner.buy_dog("Snuffles")
 
         expect(@owner.dogs[2].name).to eq("Snuffles")
         expect(@owner.dogs[0].name).to eq("Fido")
