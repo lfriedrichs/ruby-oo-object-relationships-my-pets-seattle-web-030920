@@ -32,7 +32,7 @@ class Owner
   end 
   
   def cats 
-    Cat.all.find_all 
+    Cat.all.find_all {|cat| cat.owner = self.name}
   end
   
   def dogs 
