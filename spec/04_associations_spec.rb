@@ -40,6 +40,11 @@ describe "Associations" do
       it 'can buy a cat that is an instance of the Cat class' do
         expect(@owner.cats.count).to eq(0)
 
+
+        cat_1.owner=(nil)
+        cat_2.owner=(nil)
+        cat_3.owner=(nil)
+        
         @owner.buy_cat("Crookshanks")
         @owner.buy_cat("Whiskers")
         @owner.buy_cat("Garfield")
