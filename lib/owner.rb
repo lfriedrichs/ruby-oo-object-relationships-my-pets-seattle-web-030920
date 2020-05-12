@@ -55,4 +55,9 @@ class Owner
     Cat.all 
   end
   
+  def sell_pets 
+  end 
+  def list_pets 
+  end 
+  
 end
