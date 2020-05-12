@@ -57,6 +57,10 @@ describe "Associations" do
       end
 
       it 'knows about its cats' do
+        cat_1.owner=(nil)
+        cat_2.owner=(nil)
+        cat_3.owner=(nil)
+        
         @owner.buy_cat("Crookshanks")
         @owner.buy_cat("Whiskers")
         @owner.buy_cat("Garfield")
