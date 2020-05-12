@@ -1,8 +1,9 @@
 class Owner
   
   @@all = []
-  def initialize(name) 
+  def initialize(name, owner) 
     @name = name 
+    @owner = owner
     @species = 'human'
     @@all << self
   end
@@ -10,6 +11,10 @@ class Owner
   def name 
     @name 
   end 
+  
+  def owner 
+    @owner 
+  end
   
   def species 
     @species 
