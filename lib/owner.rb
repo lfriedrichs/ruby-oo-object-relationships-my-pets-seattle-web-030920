@@ -43,4 +43,8 @@ class Owner
     Cat.all 
   end
   
+  def buy_dog 
+    Dog.all 
+  end
+  
 end
