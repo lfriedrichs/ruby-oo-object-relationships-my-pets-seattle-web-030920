@@ -4,7 +4,7 @@ class Owner
   def initialize(name, owner) 
     @name = name 
     @owner = owner
-    @species = 'human'
+    @mood = 'nervous'
     @@all << self
   end
   
@@ -15,6 +15,14 @@ class Owner
   def owner 
     @owner 
   end
+  
+  def mood 
+    @mood 
+  end 
+  
+  def mood=(new_mood) 
+    @mood = new_mood 
+  end 
   
   def species 
     @species 
