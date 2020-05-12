@@ -39,12 +39,12 @@ class Owner
     Dog.all.find_all {|dog| dog.owner = self}
   end
   
-  def buy_cat
-    Cat.all 
+  def buy_cat(cat)
+    cat.owner = self
   end
   
-  def buy_dog 
-    Dog.all 
+  def buy_dog(dog)
+    dog.owner = self 
   end
   
   def walk_dogs
